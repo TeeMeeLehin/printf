@@ -56,7 +56,7 @@ break;
 default:
 /* unsupported format specifier, ignore it */
 break;
-}
+};
 }
 else
 {
