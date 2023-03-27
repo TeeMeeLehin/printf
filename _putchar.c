@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
 * _putchar - function to write string to terminal
 * @c: the character to be written
