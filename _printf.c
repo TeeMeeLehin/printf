@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stdarg.h>
-#include <string.h>
-#include <unistd.h>
+
+
+
 
 /**
 * _print_char - custom function for single char
@@ -56,7 +56,7 @@ break;
 default:
 /* unsupported format specifier, ignore it */
 break;
-}
+};
 }
 else
 {
@@ -73,9 +73,10 @@ return (count);
 */
 int _printf(const char *format, ...)
 {
+int count;
 va_list args;
 va_start(args, format);
-int count = _print_format(format, args);
+count = _print_format(format, args);
 va_end(args);
 return (count);
 }
