@@ -61,7 +61,7 @@ case 'c':
 count += _print_char(va_arg(args, int));
 break;
 case 'b':
-count += _print_binary(va_arg(args, int));
+count += _print_binary(va_arg(args, unsigned int));
 break;
 case 'd':
 case 'i':

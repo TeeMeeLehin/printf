@@ -5,9 +5,9 @@
 * Return: int
 */
 
-int _print_binary(int n)
+int _print_binary(unsigned int n)
 {
-int binaryNum[128];
+unsigned int binaryNum[128];
 int j, i = 0;
 while (n > 0)
 {
