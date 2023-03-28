@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 		{
 			format++;
 
-			if (*format == d || *format == 'i')
+			if (*format == 'd' || *format == 'i')
 			{
 				printed_chars += print_integer(args);
 			}
@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 			{
 				_putchar('%');
 				_putchar(*format);
-				printed_char += 2;
+				printed_chars += 2;
 			}
 		}
 		else
@@ -54,7 +54,7 @@ int _printf(const char *format, ...)
  */
 int print_integer(va_list args)
 {
-	int num = va_args(args, int);
+	int num = va_arg(args, int);
 	int digits = 0;
 	int divisor = 1;
 	int printed_chars = 0;
@@ -68,7 +68,7 @@ int print_integer(va_list args)
 
 	while ((num / divisor) > 9)
 	{
-		divisor = *10;
+		divisor = 10;
 	}
 
 	while (divisor != 0)
