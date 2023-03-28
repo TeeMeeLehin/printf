@@ -60,6 +60,9 @@ switch (*(++p))
 case 'c':
 count += _print_char(va_arg(args, int));
 break;
+case 'b':
+count += _print_binary(va_arg(args, int));
+break;
 case 'd':
 case 'i':
 arg_int = va_arg(args, int);
